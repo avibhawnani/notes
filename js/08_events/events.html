@@ -31,16 +31,16 @@
 
     // capturing(true), bubbling(false)
     
-    // document.getElementById("images").addEventListener("click",function(e){
-    //     // alert("Owl CLicked");
-    //     console.log("inside images");
-    // },false);
+    document.getElementById("images").addEventListener("click",function(e){
+        // alert("Owl CLicked");
+        console.log("inside images");
+    },false);
     
-    // document.getElementById("owl").addEventListener("click",function(e){
-    //     // alert("Owl CLicked");
-    //     console.log("inside owl");
-    //     e.stopPropagation();
-    // },false);
+    document.getElementById("owl").addEventListener("click",function(e){
+        // alert("Owl CLicked");
+        console.log("inside owl");
+        e.stopPropagation();
+    },false);
 
     // document.getElementById('google').addEventListener('click',function(e){
     //     e.preventDefault();
@@ -49,15 +49,15 @@
     // }, false)
 
     // remove images on click
-    document.querySelector("#images").addEventListener("click",(e)=>{
-        console.log(e.target.tagName);
-        if(e.target.tagName === "IMG"){
-            console.log(e.target.id);
-            console.log(e.target.parentNode);
-            let remNode = e.target.parentNode;
-            remNode.remove();
-        }
-    })
+    // document.querySelector("#images").addEventListener("click",(e)=>{
+    //     console.log(e.target.tagName);
+    //     if(e.target.tagName === "IMG"){
+    //         console.log(e.target.id);
+    //         console.log(e.target.parentNode);
+    //         let remNode = e.target.parentNode;
+    //         remNode.remove();
+    //     }
+    // })
 //removeIt.parentNode.removeChild(removeIt)
 </script>
 </html>

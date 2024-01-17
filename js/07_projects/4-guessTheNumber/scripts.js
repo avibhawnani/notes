@@ -79,7 +79,7 @@ function endGame(){
 }
 
 function newGame(b){
-    console.log("New Game Called");
+    // console.log("New Game Called");
     playGame = true;
     randomNumber = parseInt(Math.random() * 100 + 1);
     console.log("new game rm ",randomNumber);

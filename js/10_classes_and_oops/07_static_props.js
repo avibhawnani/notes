@@ -23,4 +23,5 @@ class Teacher extends User {
 }
 
 const iphone = new Teacher("iphone", "i@phone.com")
-console.log(iphone.createId());
+// console.log(iphone.createId()); not possible
+console.log(User.createId());       // to access static methods

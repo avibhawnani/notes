@@ -18,7 +18,7 @@ console.log(a2);
 a2.shift();
 console.log(a2);
 
-console.log(a2.includes(8));
+console.log(a2.includes(8)); //true
 console.log(a2.indexOf(9)); // -1
 
 const newArr = a2.join(); //string

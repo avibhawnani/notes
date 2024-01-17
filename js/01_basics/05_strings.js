@@ -31,4 +31,4 @@ console.log(url.replace("%20","-")); // https://avibhawnani-portfolio.com
 
 console.log(url.includes("avibhawnani")); //true
 
-console.log(gameName.split('-'));
+console.log(gameName.split('-'));  //returns []
