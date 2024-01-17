@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>setInterval</title>
+</head>
+<body>
+    <h1>Set Interval</h1>
+    <p id="msg"></p>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <script>
+        const start = document.getElementById("start")
+        const stop = document.getElementById("stop")
+        const msg = document.getElementById("msg");
+
+        let ref;
+        function sayHello(){
+            console.log("hi");
+            // msg.innerHTML
+        }
+
+        start.addEventListener("click",()=>{
+                ref = setInterval(sayHello,2000);
+        })
+
+        stop.addEventListener("click",()=>{
+            clearInterval(ref);
+        })
+        
+        
+    </script>
+</body>
+</html>

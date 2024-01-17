@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>XML API Request</title>
+</head>
+<body>
+    <div class="container">
+        0	UNSENT	Client has been created. open() not called yet. <br>
+        1	OPENED	open() has been called.<br>
+        2	HEADERS_RECEIVED	send() has been called, and headers and status are available.<br>
+        3	LOADING	Downloading; responseText holds partial data.<br>
+        4	DONE	The operation is complete.<br>
+
+        <div class="card"></div>
+        
+    </div>
+    <script>
+    let avatar;
+    let followers;
+    const requestUrl = 'https://api.github.com/users/avibhawnani'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requestUrl)
+    xhr.onreadystatechange = function(){
+        // console.log(xhr.readyState);
+        if(xhr.readyState === 4){
+            const data = JSON.parse(this.response);
+
+            // ASSIGNMENT
+            avatar = data.avatar_url;
+            followers = data.followers;
+            
+            const card = document.querySelector(".card");
+            const img = document.createElement("img");
+            const h3 = document.createElement("h3");
+    
+            img.setAttribute("src",avatar);
+            img.setAttribute("height","100px")
+            img.setAttribute("width","100px")
+            h3.innerHTML = `FOLLOWERS : ${followers}`;
+
+            card.appendChild(img);
+            card.appendChild(h3);
+        }
+        
+    }
+    xhr.send();
+
+    
+
+
+
+
+
+    
+    </script>
+</body>
+</html>

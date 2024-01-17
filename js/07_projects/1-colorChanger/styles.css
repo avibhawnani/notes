@@ -1,0 +1,19 @@
+.button {
+    width: 100px;
+    height: 100px;
+    border: solid black 2px;
+    display: inline-block;
+}
+
+#grey{
+    background-color: #212121;
+}
+#blue{
+    background-color: blue;
+}
+#yellow{
+    background-color: yellow;
+}
+#red{
+    background-color: red;
+}
