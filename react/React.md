@@ -2,8 +2,6 @@
 
 React is a JavaScript library for building user interfaces, particularly for single-page applications where the user interface needs to be dynamic and responsive.
 
-Here's an overview of some key concepts related to React:
-
 1. **React:**
    - **Component-Based:** React is built around the idea of reusable components. Components are independent, self-contained units that encapsulate a part of the user interface.
    - **Declarative:** React allows developers to describe how the UI should look at any point in time, and it automatically updates and renders the components when the underlying data changes.
